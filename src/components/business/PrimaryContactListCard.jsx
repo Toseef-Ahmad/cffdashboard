@@ -21,10 +21,7 @@ const PrimaryContactListCard = ({
 }) => {
   const [business, setBusiness] = useState({});
   const [customer, setCustomer] = useState({});
-  const [additionalContacts, setAdditionalContacts] = useState([
-    { name: "toseef" },
-    { name: "ahmad" },
-  ]); // additional contacts.
+  const [additionalContacts, setAdditionalContacts] = useState([]); // additional contacts.
   const [coverage, setCoverage] = useState({});
   const [whichObjectIsEdited, setWhichObjectIsEdited] = useState({
     business: false,
@@ -212,13 +209,13 @@ const PrimaryContactListCard = ({
   });
 
   return (
-    <div className="general-detail-fields-business">
+    <div className='general-detail-fields-business'>
       <h4 style={{ marginTop: 50, fontSize: 18, fontWeight: 700 }}>
         Business Owner
       </h4>
       <div style={{ width: "92%", margin: "50px auto 50px auto" }}>
         {/* Row Two */}
-        <Row justify="space-between">
+        <Row justify='space-between'>
           <Col span={5} lg={5} sm={24}>
             <div
               style={{
@@ -227,39 +224,39 @@ const PrimaryContactListCard = ({
                 flexGrow: 2.5,
               }}
             >
-              <label htmlFor="customer_first_name">First Name</label>
+              <label htmlFor='customer_first_name'>First Name</label>
               <Input
-                id="1"
-                name="customer_first_name"
+                id='1'
+                name='customer_first_name'
                 value={customer?.customer_first_name}
                 onChange={(e) => handleChange(e, "customer")}
-                placeholder="First Name"
+                placeholder='First Name'
               />
             </div>
           </Col>
           {/** Last Name */}
           <Col span={5} lg={4} sm={24}>
             <div style={{ flexGrow: 2 }}>
-              <label htmlFor="customer_last_name">Last Name</label>
+              <label htmlFor='customer_last_name'>Last Name</label>
               <Input
-                id="1"
-                name="customer_last_name"
+                id='1'
+                name='customer_last_name'
                 value={customer?.customer_last_name}
                 onChange={(e) => handleChange(e, "customer")}
-                placeholder="Last Name"
+                placeholder='Last Name'
               />
             </div>
           </Col>
           {/** Date of Birth */}
           <Col span={5} lg={4} sm={24}>
             <div style={{ flexGrow: 2 }}>
-              <label htmlFor="business_DBA">Date of Birth</label>
+              <label htmlFor='business_DBA'>Date of Birth</label>
               <Input
-                id="1"
-                name="business_EIN"
+                id='1'
+                name='business_EIN'
                 value={renderDateOfBirth(customer?.customer_dob)}
                 onChange={(e) => handleChange(e, "customer")}
-                placeholder="Date Of Birth"
+                placeholder='Date Of Birth'
               />
             </div>
           </Col>
@@ -267,13 +264,13 @@ const PrimaryContactListCard = ({
           {/** Cell Phone Number  */}
           <Col span={0} lg={3} sm={24}>
             <div style={{ flexGrow: 2 }}>
-              <label htmlFor="business_phone">Cell Phone Number</label>
+              <label htmlFor='business_phone'>Cell Phone Number</label>
               <Input
-                id="1"
-                name="business_phone"
+                id='1'
+                name='business_phone'
                 value={business?.business_phone}
                 onChange={(e) => handleChange(e, "customer")}
-                placeholder="Cell Phone Number"
+                placeholder='Cell Phone Number'
               />
             </div>
           </Col>
@@ -281,13 +278,13 @@ const PrimaryContactListCard = ({
           {/** Email Address */}
           <Col span={5} lg={5} sm={24}>
             <div style={{ flexGrow: 2 }}>
-              <label htmlFor="business_email">Email Address</label>
+              <label htmlFor='business_email'>Email Address</label>
               <Input
-                id="1"
-                name="business_email"
+                id='1'
+                name='business_email'
                 value={business?.business_email}
                 onChange={(e) => handleChange(e, "customer")}
-                placeholder="Email Address"
+                placeholder='Email Address'
               />
             </div>
           </Col>
@@ -295,7 +292,7 @@ const PrimaryContactListCard = ({
 
         {/* Row Two */}
 
-        <Row justify="space-between">
+        <Row justify='space-between'>
           {/** Address */}
           <Col span={5} lg={5} sm={24}>
             <div
@@ -305,39 +302,39 @@ const PrimaryContactListCard = ({
                 flexGrow: 2.5,
               }}
             >
-              <label htmlFor="customer_street">Address</label>
+              <label htmlFor='customer_street'>Address</label>
               <Input
-                id="1"
-                name="customer_street"
+                id='1'
+                name='customer_street'
                 value={customer?.customer_street}
                 onChange={(e) => handleChange(e, "customer")}
-                placeholder="Address"
+                placeholder='Address'
               />
             </div>
           </Col>
           {/** Address Line 2 */}
           <Col span={5} lg={4} sm={24}>
             <div style={{ flexGrow: 2 }}>
-              <label htmlFor="business_DBA">Address Line 2</label>
+              <label htmlFor='business_DBA'>Address Line 2</label>
               <Input
-                id="1"
-                name="customer_street_2"
+                id='1'
+                name='customer_street_2'
                 value={customer?.customer_street_2}
                 onChange={(e) => handleChange(e, "customer")}
-                placeholder="Address 2"
+                placeholder='Address 2'
               />
             </div>
           </Col>
           {/** City */}
           <Col span={5} lg={4} sm={24}>
             <div style={{ flexGrow: 2 }}>
-              <label htmlFor="customer_city">City</label>
+              <label htmlFor='customer_city'>City</label>
               <Input
-                id="1"
-                name="customer_city"
+                id='1'
+                name='customer_city'
                 value={customer?.customer_city}
                 onChange={(e) => handleChange(e, "customer")}
-                placeholder="City"
+                placeholder='City'
               />
             </div>
           </Col>
@@ -351,14 +348,14 @@ const PrimaryContactListCard = ({
                 flexGrow: 2.5,
               }}
             >
-              <label htmlFor="lease_vehicle">State</label>
+              <label htmlFor='lease_vehicle'>State</label>
               <Select
                 style={{ height: "35.72px", borderRadius: 10 }}
-                name="customer_state"
+                name='customer_state'
                 value={customer?.customer_state}
                 onSelect={handleSelect("customer_state", "customer")}
-                placeholder="State"
-                defaultValue="Massachusetts"
+                placeholder='State'
+                defaultValue='Massachusetts'
               >
                 {STATES.map((state) => {
                   return <Option value={state}>{state}</Option>;
@@ -370,13 +367,13 @@ const PrimaryContactListCard = ({
           {/** Zip Code */}
           <Col span={5} lg={4} sm={24}>
             <div style={{ flexGrow: 2 }}>
-              <label htmlFor="customer_zip">Zip Code</label>
+              <label htmlFor='customer_zip'>Zip Code</label>
               <Input
-                id="1"
-                name="customer_zip"
+                id='1'
+                name='customer_zip'
                 value={customer?.customer_zip}
                 onChange={(e) => handleChange(e, "customer")}
-                placeholder="Zip Code"
+                placeholder='Zip Code'
               />
             </div>
           </Col>
@@ -414,7 +411,7 @@ const PrimaryContactListCard = ({
             }}
           >
             {/* Row Two */}
-            <Row justify="space-between">
+            <Row justify='space-between'>
               {/** Address */}
               <Col span={5} lg={5} sm={24}>
                 <div
@@ -424,39 +421,39 @@ const PrimaryContactListCard = ({
                     flexGrow: 2.5,
                   }}
                 >
-                  <label htmlFor="customer_street">Address</label>
+                  <label htmlFor='customer_street'>Address</label>
                   <Input
-                    id="1"
-                    name="customer_street"
+                    id='1'
+                    name='customer_street'
                     value={customer_street}
                     onChange={handleAdditionalContact(index)}
-                    placeholder="Address"
+                    placeholder='Address'
                   />
                 </div>
               </Col>
               {/** Address Line 2 */}
               <Col span={5} lg={4} sm={24}>
                 <div style={{ flexGrow: 2 }}>
-                  <label htmlFor="business_DBA">Address Line 2</label>
+                  <label htmlFor='business_DBA'>Address Line 2</label>
                   <Input
-                    id="1"
-                    name="customer_street_2"
+                    id='1'
+                    name='customer_street_2'
                     value={customer_street_2}
                     onChange={handleAdditionalContact(index)}
-                    placeholder="Address 2"
+                    placeholder='Address 2'
                   />
                 </div>
               </Col>
               {/** City */}
               <Col span={5} lg={4} sm={24}>
                 <div style={{ flexGrow: 2 }}>
-                  <label htmlFor="customer_city">City</label>
+                  <label htmlFor='customer_city'>City</label>
                   <Input
-                    id="1"
-                    name="customer_city"
+                    id='1'
+                    name='customer_city'
                     value={customer_city}
                     onChange={handleAdditionalContact(index)}
-                    placeholder="City"
+                    placeholder='City'
                   />
                 </div>
               </Col>
@@ -470,18 +467,18 @@ const PrimaryContactListCard = ({
                     flexGrow: 2.5,
                   }}
                 >
-                  <label htmlFor="lease_vehicle">State</label>
+                  <label htmlFor='lease_vehicle'>State</label>
                   <Select
                     style={{ height: "35.72px", borderRadius: 10 }}
-                    name="customer_state"
+                    name='customer_state'
                     value={customer_state}
                     onSelect={(value) =>
                       handleAdditionalContact(index)({
                         target: { name: "customer_state", value: value },
                       })
                     }
-                    placeholder="State"
-                    defaultValue="Massachusetts"
+                    placeholder='State'
+                    defaultValue='Massachusetts'
                   >
                     {STATES.map((state) => {
                       return <Option value={state}>{state}</Option>;
@@ -493,13 +490,13 @@ const PrimaryContactListCard = ({
               {/** Zip Code */}
               <Col span={5} lg={4} sm={24}>
                 <div style={{ flexGrow: 2 }}>
-                  <label htmlFor="customer_zip">Zip Code</label>
+                  <label htmlFor='customer_zip'>Zip Code</label>
                   <Input
-                    id="1"
-                    name="customer_zip"
+                    id='1'
+                    name='customer_zip'
                     value={customer_zip}
                     onChange={handleAdditionalContact(index)}
-                    placeholder="Zip Code"
+                    placeholder='Zip Code'
                   />
                 </div>
               </Col>
