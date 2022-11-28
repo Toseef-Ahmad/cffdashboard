@@ -199,6 +199,7 @@ const PrimaryContactListCard = ({
     };
 
   const handleDeleteAdditionalContact = (index) => {
+    alert(index);
     setAdditionalContacts((prev) => {
       return prev.filter((ac, i) => {
         return i !== index;
@@ -505,7 +506,7 @@ const PrimaryContactListCard = ({
             </Row>
             {index > 0 && (
               <AiOutlineDelete
-                onClick={handleDeleteAdditionalContact}
+                onClick={() => handleDeleteAdditionalContact(index)}
                 style={{
                   marginLeft: 10,
                   fontSize: 25,
