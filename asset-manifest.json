@@ -1,15 +1,16 @@
 {
   "files": {
     "main.css": "/cffdashboard/static/css/main.d10fd7dd.css",
-    "main.js": "/cffdashboard/static/js/main.193b4152.js",
+    "main.js": "/cffdashboard/static/js/main.f42a4f7b.js",
     "static/js/787.0c3f432a.chunk.js": "/cffdashboard/static/js/787.0c3f432a.chunk.js",
+    "static/media/logo.svg": "/cffdashboard/static/media/logo.fc106dc0661d4808e38b2d7a53dd927e.svg",
     "index.html": "/cffdashboard/index.html",
     "main.d10fd7dd.css.map": "/cffdashboard/static/css/main.d10fd7dd.css.map",
-    "main.193b4152.js.map": "/cffdashboard/static/js/main.193b4152.js.map",
+    "main.f42a4f7b.js.map": "/cffdashboard/static/js/main.f42a4f7b.js.map",
     "787.0c3f432a.chunk.js.map": "/cffdashboard/static/js/787.0c3f432a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d10fd7dd.css",
-    "static/js/main.193b4152.js"
+    "static/js/main.f42a4f7b.js"
   ]
 }
