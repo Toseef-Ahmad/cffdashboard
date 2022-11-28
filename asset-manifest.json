@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cffdashboard/static/css/main.d10fd7dd.css",
+    "main.js": "/cffdashboard/static/js/main.7f6d4abb.js",
+    "static/js/787.0c3f432a.chunk.js": "/cffdashboard/static/js/787.0c3f432a.chunk.js",
+    "index.html": "/cffdashboard/index.html",
+    "main.d10fd7dd.css.map": "/cffdashboard/static/css/main.d10fd7dd.css.map",
+    "main.7f6d4abb.js.map": "/cffdashboard/static/js/main.7f6d4abb.js.map",
+    "787.0c3f432a.chunk.js.map": "/cffdashboard/static/js/787.0c3f432a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d10fd7dd.css",
+    "static/js/main.7f6d4abb.js"
+  ]
+}
