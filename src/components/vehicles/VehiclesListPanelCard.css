@@ -1,0 +1,56 @@
+/* General Details */
+.general-detail-heading {
+  margin-bottom: 30px;
+}
+
+.container {
+  margin-bottom: 50px;
+  margin-top: 50px;
+  margin-left: 10px;
+}
+
+.container label {
+  font-size: 14px;
+}
+
+.general-detail-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-left: 20px;
+}
+
+.general-detail-fields Input {
+  border-radius: 3px;
+  /* flex-basis: 280px; */
+}
+
+.general-detail-fields-business Input {
+  border-radius: 3px;
+  margin-bottom: 15px;
+}
+
+.general-detail-fields-business {
+  margin-bottom: 10px;
+}
+
+/* Details */
+.details {
+  margin-top: 50px;
+}
+
+.details-heading {
+  margin-bottom: 30px;
+}
+
+.details-fields {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 22px;
+  margin-left: 20px;
+}
+
+.details-fields Input {
+  border-radius: 3px;
+  flex-basis: 280px;
+}

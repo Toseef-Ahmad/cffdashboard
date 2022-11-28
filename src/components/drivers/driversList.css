@@ -1,0 +1,19 @@
+/* Global variables */
+:root {
+  --color: #fff;
+  --background: #fff;
+}
+
+.delete-icon {
+  color: var(--color);
+  font-size: 30px;
+}
+
+.disable-button {
+  background-color: rgb(170, 170, 170) !important;
+  color: #fff !important;
+}
+
+.panel:hover {
+  --color: #a20010;
+}

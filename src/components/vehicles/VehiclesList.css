@@ -1,0 +1,91 @@
+/* Global variables */
+:root {
+  --display: none;
+  --background-color: #fff;
+  --color: #fff;
+  --edit-button-background: #bd0008;
+}
+
+.edit-button {
+  width: 72px;
+  height: 39px;
+  font-weight: 600;
+  margin-right: 1rem;
+  background: var(--edit-button-background) !important;
+  color: #fff !important;
+  border-radius: 5px !important;
+  text-align: center;
+}
+
+.disbale-button {
+  --edit-button-background: rgb(201, 194, 194);
+}
+
+.tag-and-edit-wrapper {
+  display: flex;
+  column-gap: 10px;
+  margin-right: 1.5rem;
+  align-items: center;
+}
+
+.panel:hover {
+  --color: #a20010;
+}
+
+.delete-icon {
+  background-color: var(--background-color);
+  color: var(--color);
+
+  /* Size */
+  font-size: 30px;
+}
+
+.tag {
+  background: #00b807 !important;
+  color: #fff !important;
+  width: 90px !important;
+  height: 26px !important;
+  line-height: 1.1 !important;
+  font-size: 20px !important;
+  text-align: center !important;
+  border-radius: 5px !important;
+  margin: auto 0 !important;
+}
+
+/* ant-collapse-header */
+.ant-collapse-header-text {
+  width: 100%;
+}
+.ant-collapse {
+  background-color: #ffffff;
+}
+.ant-collapse-expand-icon {
+  display: inline-block;
+  position: absolute;
+  z-index: 2;
+  right: 16px;
+  top: 50%;
+  font-size: 18px !important;
+}
+.ant-collapse-content-active {
+  border-top: 2px solid #f3f7fa !important;
+}
+.Drivers .ant-collapse-expand-icon {
+  right: 10px;
+  top: 15px;
+}
+.ant-collapse-expand-icon svg {
+  font-size: 18px !important;
+}
+/* .ant-collapse-icon-position-end
+  > .ant-collapse-item
+  > .ant-collapse-header
+  .ant-collapse-arrow {
+  position: absolute;
+  right: 16px;
+  font-size: 18px;
+  font-weight: bolder;
+  left: auto;
+  margin: 0;
+  transform: translateY(-50%);
+} */

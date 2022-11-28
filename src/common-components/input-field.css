@@ -1,0 +1,27 @@
+.input-field {
+    box-shadow: none !important;
+    border-radius: 0.2rem;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.input-field input {
+    box-shadow: none !important;
+    background: var(--inputColor);
+}
+
+.input-field input:focus {
+    border: 2px solid transparent;
+    border-image: linear-gradient(34deg, var(--cyan), var(--blue));
+    border-image-slice: 1;
+}
+
+#input-field-icon {
+    position: relative;
+    left: 1.9rem;
+    font-size: 22px;
+    top: 3px;
+    cursor: pointer;
+}

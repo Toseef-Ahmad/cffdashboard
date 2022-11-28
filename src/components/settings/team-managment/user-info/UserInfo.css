@@ -1,0 +1,31 @@
+.user-info-wrapper {
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+  /*background: #d2d5da;*/
+  border: none;
+  display: inline-block;
+}
+
+.buttons {
+  display: flex;
+  column-gap: 10px;
+}
+
+.user-form-wrapper {
+  margin-top: 30px;
+}
+.first-row {
+  display: flex;
+  column-gap: 10%;
+}
+
+.password-wrapper {
+  display: flex;
+  column-gap: 20px;
+}

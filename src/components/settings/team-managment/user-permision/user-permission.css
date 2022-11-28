@@ -1,0 +1,22 @@
+.user-permission-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+
+.edit {
+  display: flex;
+  column-gap: 20px;
+}
+
+#user-permission .ant-collapse-arrow {
+  color: #0360cc;
+}
+
+.ant-collapse-arrow svg {
+  margin-bottom: 5px !important;
+}
+
+p {
+  margin: 0;
+}

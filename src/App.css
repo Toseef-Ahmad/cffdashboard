@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --White: #ffffff;
+  --Black: #000000;
+  --WhiteSmoke: #f3f7fa;
+  --Red: #a20010;
+  --Gray: #6b727f;
+  --GraySecondary: #637178;
+  --DarkGray: #2b3135;
+  --LightGray: rgba(210, 213, 218, 1);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  background-color: var(--WhiteSmoke) !important;
+  color: var(--DarkGray) !important;
+}
+
+.ant-table-thead tr .ant-table-cell {
+  padding: 14px 16px !important;
+  background-color: #ffffff !important;
+  font-size: 0.8rem;
+}
+.ant-table-thead tr .ant-table-cell svg {
+  font-size: 9px;
+}
+.ant-table-tbody tr .ant-table-cell {
+  padding: 5px 16px;
+  font-size: 0.8rem;
+}
+.ant-table-tbody tr .ant-table-cell p {
+  margin-bottom: 0;
+}
+.ant-table-cell::before {
+  display: none;
+}
+.ant-table-column-sorters {
+  display: inline-block !important;
+}
+.ant-table-column-sorter-inner {
+  position: relative;
+  top: -3px;
+}

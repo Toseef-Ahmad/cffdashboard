@@ -1,0 +1,8 @@
+.user-role-wrapper {
+  width: 100%;
+  padding: 25px 10px;
+}
+
+#user-rols .ant-collapse-arrow {
+  color: #0360cc;
+}
