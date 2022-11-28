@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
+// logo
+import logo from "../assests/logo.svg";
 
 const Sidebar = () => {
   const location = useLocation();
@@ -24,7 +26,7 @@ const Sidebar = () => {
   return (
     <div className="sidebar">
       <div className="logo">
-        <img src="/images/logo.svg" alt="CFF logo" />
+        <img src={logo} alt="CFF logo" />
       </div>
 
       <div className="sidebar-items">
